@@ -11,7 +11,7 @@ Before you begin, ensure that you have the following software installed on your 
 
 ### Step 1: Configure AWS Credentials
 
-Create a .env.local file in the root of the project directory. This file should contain your AWS credentials and the default region. The .env-example file with real values:
+Create a `.env.local` file in the root of the project directory. This file should contain your AWS credentials and the default region. The .env-example file with real values:
 
 ```
 AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE 
