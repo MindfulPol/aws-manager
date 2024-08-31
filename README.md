@@ -13,31 +13,25 @@ Before you begin, ensure that you have the following software installed on your 
 
 Create a .env.local file in the root of the project directory. This file should contain your AWS credentials and the default region. The .env-example file with real values:
 
-<pre>
-    <code>
-        AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE 
-        AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY 
-        AWS_DEFAULT_REGION=eu-south-2 
-    </code>
- </pre>
-
+```
+AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE 
+AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY 
+AWS_DEFAULT_REGION=eu-south-2 
+```
+    
 ### Step 2: Build the Docker Image
 
-<pre>
-    <code>
-        make build
-    </code>
- </pre>
+```
+make build
+```
 
-Build command will automatically export as env variables the configured aws credentials.
+Build command will automatically take into account the configured aws credentials.
 
  ### Step 4: Run the Docker Container
 
- <pre>
-    <code>
-        make run
-    </code>
- </pre>
+```
+make run
+```
 
  This command starts a Docker container with an interactive bash shell.
 
