@@ -1,6 +1,6 @@
 # Dockerized AWS CLI on Ubuntu
 
-This repository provides a Docker setup for running the AWS CLI within an Ubuntu environment. The setup includes a `Dockerfile` to build the image and a `Makefile` to streamline common tasks such as building the image, running the container, and configuring AWS credentials.
+This repository provides a Docker setup for running the AWS CLI within an Ubuntu environment. Developed whilst practicing for aws solutions architect certification.
 
 ## Prerequisites
 

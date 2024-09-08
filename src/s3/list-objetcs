@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+if [ -z "$1" ]; then
+  echo "Usage: list-objects <bucket-name>"
+  exit 1
+fi
+
+aws s3api list-objects-v2 --bucket $1

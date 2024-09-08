@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+if [ $# -ne 1 ]; then
+  echo "Usage: $0 <bucket-name>"
+  exit 1
+fi
+
+aws s3api delete-objects --bucket $1 \
+--delete "$(aws s3api list-objects-v2 --bucket $1 | jq '{Objects: [.Contents[] | {Key:.Key}]}')"

@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+if [ -z "$1" ] || [ -z "$2" ]; then
+  echo "Usage: create-bucket <bucket-name> <region>"
+  exit 1
+fi
+aws s3api create-bucket \
+--bucket $1 \
+--region $2 --create-bucket-configuration LocationConstraint=$2 \
+--query Location \
+--output text \
