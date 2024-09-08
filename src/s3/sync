@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+if [ -z "$1" ] || [ -z "$2" ]; then
+  echo "Usage: sync <bucket-name> <dir-to-sync>"
+  exit 1
+fi
+
+aws s3 sync $2 s3://$1

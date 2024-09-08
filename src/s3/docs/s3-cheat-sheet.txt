@@ -1,0 +1,35 @@
+S3
+
+Object-based storage.
+- S3 provides unlimited storage.
+- No need to think about underlying infrastructure.
+- S3 console provides an interface to upload an access data.
+
+Components:
+--- S3 Object
+- Objects contain your data. They are like files.
+Object may consist of:
+-- key
+-- value
+-- versionId (when enabled)
+-- Metadata
+Storage class
+-- different types, at object level, may be modified if needed.
+
+
+--- S3 bucket
+- Buckets hold objects. Buckets can also have folders which in turn hold objects.
+- S3 is a universal namespace so bucket names must be unique. (as in domain names)
+
+Encryption on by default. unturnable off.
+- sse with sse-S3
+- sse with aws key management service sse-kms
+- dual-layer sse with aws kms, dsse-kms
+
+
+
+Limitations:
+- store individual object from 0 bytes to 5 terabytes.
+
+
+CLI reference docs https://docs.aws.amazon.com/cli/latest/reference/s3api/
